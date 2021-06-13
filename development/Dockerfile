@@ -31,7 +31,7 @@ RUN \
     && apk del .build-deps \
     && rm -rf /var/cache/apk/* /tmp/* /usr/share/man
 
-COPY base/xdebug/* $PHP_INI_DIR/conf.d
+COPY xdebug/* $PHP_INI_DIR/conf.d
 
 EXPOSE 8000
 
